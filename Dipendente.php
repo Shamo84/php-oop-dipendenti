@@ -3,14 +3,14 @@ class Dipendente {
   protected $id;
   protected $nome;
   protected $cognome;
-  protected $NumPrevSoc;
+  protected $numPrevSoc;
 
-  function __construct($_id, $_nome, $_cognome, $_NumPrevSoc)
+  function __construct($_id, $_nome, $_cognome, $_numPrevSoc)
   {
     $this->id = $_id;
     $this->nome = $_nome;
     $this->cognome = $_cognome;
-    $this->NumPrevSoc = $_NumPrevSoc;
+    $this->numPrevSoc = $_numPrevSoc;
   }
 
   public function SetValue($value, $string)
@@ -27,7 +27,7 @@ class Dipendente {
       $this->id,
       $this->nome,
       $this->cognome,
-      $this->NumPrevSoc
+      $this->numPrevSoc
     ];
 
     return $array;
